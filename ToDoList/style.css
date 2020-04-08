@@ -1,0 +1,377 @@
+/*Basic*/
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body, html, p, button, div {
+	padding: 0;
+	margin: 0;	
+	font-family:prometo, sans-serif;;
+}
+footer, header, main, nav, section {
+	display: block;
+}
+h1 {
+	text-transform: uppercase;
+	margin: 0;
+	padding: 50px 0;
+}
+li {
+	list-style: none;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+p {
+	padding: 10px 20px;
+}
+#body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+/*Utillties*/
+.text-center {
+	text-align: center;
+}
+.mt {
+	margin-top: 30px;
+}
+.header {
+	position: absolute;
+}
+
+/*Colours*/
+.textwhite {
+	color: #fff;
+}
+.textdark {
+	color: #222;
+}
+.bg-primary {
+	background-color: #fffc31;
+}
+.bg-light {
+	background-color: #e94f37;
+}
+.bg-dark {
+	background-color: #393e41;
+}
+
+/*Container*/
+.container {
+  	max-width: 1200px;
+  	padding: 0 20px;
+  	margin: 30px auto;
+  	position: relative;
+ 	min-height: 1px;
+ 	background-color: #ddd; 	
+ 	box-shadow: 5px 5px 5px #888888;
+}
+.inner {
+	padding: 50px;
+}
+/*Clearfix*/
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden }
+.clearfix:after { clear: both }
+.clearfix { zoom: 1 }
+
+/*heading*/
+h2 {
+	padding-bottom: 20px;
+}
+.h2, .h3, .task li {
+	display: inline-block;
+	width: 30%;	
+}
+.h3 {
+	margin-left: 20px;
+}
+.item { 
+	
+	width: 30%;	
+}
+
+
+/*Navbar*/
+.navbar {
+	background-color: #fff;
+}
+nav.menu {
+	display: inline-block;
+	float: right;
+}
+nav.menu ul {
+	padding: 30px 0;
+}
+nav.menu ul li{
+	display: inline-block;
+}
+nav.menu ul li a {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 700;
+	padding: 8px 26px;
+}
+/*nav.menu ul li a:hover {
+	text-decoration: none;
+	color: #ddd;
+	padding: 15px 20px;
+	transit*/ion: 0.5s;
+}
+nav.menu a.active {
+	background-color: #222;
+	color: #fff
+	padding: 15px 20px;
+}
+nav.above-nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #ddd;
+}
+nav.above-nav li a {
+	color: grey;
+}
+nav.below-nav {
+	position: absolute;
+	top: 40px;
+	right: -15px;
+}
+.box-nav {
+	width: 100%;
+	background-color: #447B1F;
+}
+.box-nav > div {
+	text-align: center;
+}
+.box-nav ul li {
+	text-decoration: none;
+	display: inline-block;
+	widows: 100%;
+	background-color: #447B1F;
+}
+.box-nav ul li a {
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	font-size: 22px;
+	line-height: 26px;
+	padding: 18px 46px 16px;
+	position: relative;
+}
+.line li:first-child::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background: #ffffff;
+}
+.line li::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	background: #ffffff;
+}
+
+/*Logo*/
+.logo {
+	display: inline-block;
+	padding: 20px 0;
+}
+
+/*Burgar Menu*/
+.toggle {
+	padding: 15px 20px;
+	text-align: right;
+	box-sizing: border-box;
+	display: none;
+}
+.toggle a i {
+	color: #fff;
+}
+@media only screen and (max-width: 600px) {
+	.toggle {
+		display: inline-block;
+		float: right;
+	}
+	nav.menu {		
+		width: 100%;
+		background-color: red;
+		display: none;
+	}
+	nav.menu ul li {
+		display: block;
+		text-align: center;
+    }   
+	.active {
+		display: block;
+	}
+}
+
+/*Banner-img*/
+.banner-img {
+	background-image: url( 'Images/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	height: 50%;
+}
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*Section*/
+section {
+	padding: 100px;
+	margin: 0;
+}
+
+/*Footer*/
+footer {
+	text-align: left;
+	background-color: #222;
+	left: 0;
+	bottom: 0;
+	width: 100%;	
+	padding: 100px;
+}
+.footer-text {
+	color: #fff;
+}
+
+/*Form*/
+.form-group {
+	margin: 80px 0 20px 0; 
+}
+form p {
+	color: red;
+	margin: 0;
+	width: 20%;
+}
+input[type=text], textarea {
+	width: 79%;
+	display: inline-block;
+	padding: 20px;
+	border-radius: 5px;
+	color: #222;
+  	font-size: 18px;
+}
+input[type=submit] {
+	width: 19%;
+	display: inline-block;
+	padding: 18px;
+	margin: 20px 0;
+	border-radius: 5px;
+	background-color: #393e41; 
+	color: #fff;
+	border: none;
+  	font-size: 22px;
+}
+.add-item {
+	margin: 100px 0 50px 0;
+	padding-bottom: 10px;
+}
+
+/*Responsive For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+/*Row*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding-right: 25px;
+}
+
+/*Testings*/
+
+::-webkit-input-placeholder {
+  color: #222;
+  font-size: 18px;
+}
+::-moz-placeholder {
+  color: #222;
+  font-size: 18px;
+}
+:-ms-input-placeholder {
+  color: #222;
+  font-size: 18px;
+}
+::placeholder {
+  color: #222;
+  font-size: 18px;
+}
+/*To Do List*/
+
+/*Basic*/
+
+.task {
+	padding: 20px 0;
+	border-bottom: solid 2px #222;
+}
+.task li {
+	display: inline-block;
+	margin: 10px 10px;
+}
+.delete {
+	color: white;
+	background-color: #a52a2a;
+	padding: 1px 6px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+/*Task Complete*/
+.done {
+	background-color: green;
+	padding: 10px 20px;	
+	border-radius: 5px;
+	border-style: none;
+}
+.not-done {
+	background-color: grey;
+	padding: 10px 20px;
+	opacity: 0.5;
+	border-radius: 5px;
+	border-style: none;
+}
+.not-done:hover, .done:hover {
+	opacity: 0.8;
+	transition: 0.5s;
+	background-color: grey;
+}
+.task-done {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
